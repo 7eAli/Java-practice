@@ -1,3 +1,4 @@
+package Lesson_1;
 public class Task_3_alt {
     public static void main(String[] args) {
         int[] nums = new int[] { 3, 2, 2, 3, 4, 2, 3 };
