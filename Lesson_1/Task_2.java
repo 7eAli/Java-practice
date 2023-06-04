@@ -7,7 +7,7 @@ package Lesson_1;
 
 public class Task_2 {
     public static void main(String[] args) {
-        int[] binary = new int[] {1, 1, 0, 1, 1, 1};
+        int[] binary = new int[] {1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1};
         int maxlength = 0;
         int temp_length = 0;
         int max_index = 0;
@@ -28,7 +28,7 @@ public class Task_2 {
         }
         System.out.println(max_index);
         System.out.println(maxlength);
-        for (int i = max_index; i < binary.length; i++) {
+        for (int i = max_index; i < max_index + maxlength; i++) {
             System.out.printf("%d ", binary[i]);
         }    
     }
