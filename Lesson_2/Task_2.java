@@ -46,8 +46,11 @@ public class Task_2
                     result.append(str.charAt(i));
                 }
             }
-        } 
-        result.append("" + count);
+        }
+        if (count != 1)
+        {
+            result.append("" + count);
+        }
         return result.toString();
     }
 }
