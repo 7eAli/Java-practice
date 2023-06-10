@@ -1,11 +1,10 @@
-
+import java.util.Scanner;
 /*
  * Напишите метод, который сжимает строку.
  * Пример: вход aaaabbbcddaa
  * Ответ: резульат - a4b3cd2a2
  */
 
-import java.util.Scanner;
 
 public class Task_2
 {
@@ -37,7 +36,7 @@ public class Task_2
             {
                 if (count != 1)
                 {
-                    result.append(""+count);
+                    result.append(""+"{"+count+"}");
                     count = 1;
                     result.append(str.charAt(i));
                 }
@@ -49,7 +48,7 @@ public class Task_2
         }
         if (count != 1)
         {
-            result.append("" + count);
+            result.append(""+"{"+count+"}");
         }
         return result.toString();
     }
